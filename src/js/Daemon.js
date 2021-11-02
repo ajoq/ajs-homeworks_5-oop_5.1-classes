@@ -1,13 +1,13 @@
 import Character from './Character';
 
-export default class Bowerman extends Character {
+export default class Daemon extends Character {
   constructor(name, type) {
     super(name);
-    if (type !== 'Bowman') {
+    if (type !== 'Daemon') {
       throw new Error('Некорректный тип персонажа');
     }
-    this.type = 'Bowman';
-    this.attack = 25;
-    this.defence = 25;
+    this.type = 'Daemon';
+    this.attack = 10;
+    this.defence = 40;
   }
 }
